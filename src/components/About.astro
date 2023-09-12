@@ -1,4 +1,33 @@
+---
+import { Image } from "astro:assets";
+import myImage from "../img/about.png";
 
-<main>
+---
+
+
+<section class="flex w-full justify-evenly items-center my-[100px] relative">
+    <div class="">
+        <h2 class="text-4xl">Sobre mi</h2>
+        <h3 class="text-2xl">Full Stack <span class="text-red-500">Developer</span> </h3>
+        <Image src={myImage} alt="Imagen referenia a developer" height={300} width={300}></Image>
+    </div>
+    <div class="gif">
+        <div class="dialogue-balloon">
+            <p class="w-[60ch] text-center">Soy un apasionado programador Full Stack que encuentra su motivación en el mundo del desarrollo web y se mantiene constantemente actualizado con las últimas tendencias tecnológicas. Mi forma proactiva de ser se demuestra en la búsqueda de soluciones ágiles y efectivas para los desafíos que se presenten, implementando la mejora continua. Por lo tanto, estoy capacitándome constantemente, no solo en el área del desarrollo, sino también en mis soft skills, haciendo que esté dispuesto a aprender lo necesario para ofrecer soluciones completas e innovadoras en cualquier proyecto que emprenda. Mi sed de conocimiento y mejora constante es el motor que impulsa mi carrera.</p>
+        </div>
+    </div>
+</section>
+
+
+<style>
+
     
-</main>
+
+    h2,h3{
+		font-family:'Bebas neue';
+        }
+        p{
+            font-family:
+            "Poppins"
+        }
+</style>
